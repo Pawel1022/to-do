@@ -101,9 +101,7 @@ body {
   text-align: center;
   background-color: white;
   border-radius: 0.5em;
-  min-height: 40vh;
-  min-width: 80vw;
-  max-width: 80vw;
+  width: 80%;
 }
 
 .todo__error-info {
@@ -147,6 +145,7 @@ body {
   background: none;
   border: 1px solid black;
   border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .todo__btn--complete {
@@ -176,10 +175,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 80%;
   height: 50vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   border-radius: 0.5em;
 }
@@ -202,6 +201,7 @@ body {
   background: none;
   border: 1px solid black;
   border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .popup__btn--accept {
@@ -220,5 +220,64 @@ body {
 
 .is--completed {
   color: lime;
+}
+
+@media (min-width: 776px) {
+  .todo {
+    width: 100%;
+    padding: 1em;
+  }
+  .todo__header {
+    padding-bottom: 1em;
+  }
+  .todo__heading {
+    font-size: 2em;
+  }
+  .todo__input {
+    padding: 1em 2em;
+  }
+  .todo__add-btn {
+    padding: 1em 2em;
+  }
+  .todo__body {
+    margin: 1em;
+    min-width: 80%;
+    min-height: 50vh;
+  }
+  .todo__error-info {
+    font-size: 2.4rem;
+  }
+  .todo__list-item {
+    font-size: 2.8rem;
+    padding-bottom: 2em;
+  }
+  .popup__input {
+    padding: 1em 2em;
+    padding-bottom: 2em;
+  }
+  .popup__btn {
+    padding: 1em 2em;
+  }
+}
+
+@media (min-width: 996px) {
+  .todo {
+    margin: 2em 0;
+    max-width: 40vw;
+  }
+  .todo__input {
+    margin-bottom: 4em;
+  }
+  .todo__add-btn {
+    margin-bottom: 4em;
+  }
+  .todo__body {
+    max-width: 70vw;
+    margin: 1em;
+  }
+  .popup {
+    width: 20%;
+    height: 40vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
